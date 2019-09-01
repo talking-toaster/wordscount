@@ -1,0 +1,11 @@
+<h1>统计结果</h1>
+<h3>您输入的字数为{{count}}个字</h3>
+<a href="..">回到主页</a>
+<h2>您输入的文字为：</h2>
+{{text}}
+<br>
+<h2>其中各字符出现的次数为：</h2>
+{% for key,value in words %}
+{{key}}:{{value}}
+<br>
+{% endfor %}
